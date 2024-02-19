@@ -1,0 +1,72 @@
+
+.shuffle-episode-number{
+  height: 25px;
+}
+.left-side{
+    display: flex;
+    align-items: center;
+    margin-right: 3px;
+  }
+  .shuffle-box {
+      display: flex;
+      align-items: center;
+      background-color: rgb(36 35 35 / 65%);
+      color: rgb(131, 130, 130);
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .shuffle-box.selected {
+    
+      background-color: rgba(57, 56, 56, 0.65);
+      transition: background-color 0.3s ease;
+      
+    }
+    .shuffle-box:hover{
+      cursor: pointer;
+      background-color: rgba(57, 56, 56, 0.65);
+      transition: background-color 0.3s ease;
+      
+    }
+    .show-image {
+      width: 55px;
+      height: 73px;
+      margin-right: 10px;
+    }
+    
+    .show-details {
+      flex: 1;
+    }
+    
+
+   .shuffle-episode-info{
+    width: 200px;
+    height: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* Reduce margin below the episode info */
+    background-color: transparent;
+   }
+ 
+ 
+  @media (max-width: 1425px) {
+    .left-side{
+      display: none;
+    }
+  }
+  @media (max-width: 520px)
+  {
+    .rectangle-container{
+      margin-top: 75px;
+    }
+    .carousel-date{
+      font-size: 37px;
+    }
+    .carousel-description{
+      font-size: 20px;
+    }
+    .carousel-title{
+      margin-bottom:0px;
+    }
+  }
+    

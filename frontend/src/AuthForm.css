@@ -1,0 +1,115 @@
+@import '/node_modules/@fortawesome/fontawesome-free/css/all.css';
+
+/* YourComponent.css */
+.close-button {
+  display: flex;
+  justify-content: end;
+  color: #847e7eb9;
+  cursor: pointer;
+}
+
+.auth-register p {
+  margin-top: 20px;
+  font-size: 14px;
+ }
+ .auth-register b{
+  color: #5a2e98;
+  cursor: pointer;
+ }
+button.auth-button {
+  margin-right: 165px;
+  background-color: #5a2e98;
+}
+.auth-button:hover {
+  background-color:  #8365ae !important;
+}
+
+.input-with-icon {
+  position: relative;
+}
+.auth-form h2{
+  color: white;
+  margin-top: 20px;
+}
+.auth-form p{
+  color: #a6a6a657;
+}
+.input-with-icon i {
+  color: #a6a6a657;
+  position: absolute;
+  left: 2 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.form-control-login{
+  font-family: 'Franklin Gothic Small', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 0.375rem 2.2rem !important;
+  color: #847e7eb9 !important;
+  background-color:#49505736   !important;
+  border: none ;
+}
+.auth-container{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    bottom:5%;
+    background-color: #0000008f;
+    z-index: 4;
+}
+
+.auth-container-unactive{
+  display: none;
+}
+  
+  .auth-box {
+    z-index: 3;
+    display: flex;
+    width: 600px;
+    background-color: rgb(26, 26, 26); /* Set your desired background color */
+    border-radius: 6px;
+  }
+  
+  .auth-left-side {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .auth-left-side img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Add border-radius for rounded corners */
+  }
+  
+  .auth-right-side {
+    flex: 1;
+    padding: 20px;
+    
+    margin-right: 20px;
+  }
+  
+  .auth-form {
+    text-align: center;
+  }
+  
+  .auth-form h2 {
+    margin-bottom: 20px;
+  }
+
+  
+ 
+  
+  /* Adjust the left property based on your design */
+  @media  (max-width:600px){
+    .auth-left-side{
+      display: none;
+    }
+    .auth-box{
+      width: 400px;
+    }
+  }

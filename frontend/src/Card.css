@@ -1,0 +1,310 @@
+.card-body {
+  padding: 0;
+  /* Remove padding inside the card body */
+
+}
+
+.genre {
+  width: auto;
+  max-width: 100%;
+  white-space: normal;
+  overflow: hidden;
+  display: inline-block;
+  color: #5a2e98;
+  font-size: 12px;
+}
+
+.show-card {
+  overflow: hidden;
+}
+
+.custom-card {
+  width: 165px;
+  /* Set a custom width for the card container */
+  height: 277px;
+  margin: 10px;
+  border-radius: 6px;
+  padding: 0;
+}
+
+.card-image {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 200px;
+
+}
+
+.custom-image {
+  width: 165px;
+  height: 200px;
+  object-fit: cover;
+  /* Maintain aspect ratio and cover the container */
+}
+.custom-image:hover{
+  transition: opacity 0.3s ease; 
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.episode-info {
+  width: auto;
+  height: 25px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  /* Reduce margin below the episode info */
+  background-color: rgb(36 35 35 / 65%);
+}
+
+.episode-number {
+  background-color: #5a2e98;
+  /* Example background color for the episode number box */
+  color: #e8d6d6;
+  /* Example text color for the episode number */
+  padding: 4px;
+  height: 25px;
+  font-size: 13px;
+  width: auto;
+  display: inline-block;
+  
+
+}
+
+
+.season-number {
+  height: 25px;
+  background-color: #4b4b4b;
+  /* Example background color for the episode number box */
+  color: #e8d6d6;
+  /* Example text color for the episode number */
+  padding: 4px;
+  font-size: 13px;
+  display: inline-block;
+
+  padding-right: 10px;
+}
+
+.total-episodes {
+  margin-right: 3px;
+  height: 25px;
+  background-color: #726d00;
+  /* Example background color for the episode number box */
+  color: #e8d6d6;
+  /* Example text color for the episode number */
+
+  padding: 4px;
+  font-size: 13px;
+  display: inline-block;
+
+
+
+}
+
+.bookmark {
+  color: #b8b2b2;
+  margin-left: auto;
+  display: flex;
+  height: 14px;
+  width: auto;
+  cursor: pointer;
+}
+
+
+.card-title {
+  height: auto;
+  margin-bottom: 0;
+  font-size: small;
+  padding-left: 1px;
+  color: #b2a4a4;
+  overflow: hidden;
+  max-height: 54px;
+}
+
+.card-title:hover {
+  color: #874cd8;
+  cursor: pointer;
+}
+
+
+.custom-card {
+  position: relative;
+  /* Add other styles as needed */
+}
+
+.card-image {
+  position: relative;
+}
+
+.play-button img {
+  height: 50px;
+  width: 50px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  /* Initially hide both play button and show card */
+  transition: opacity 0.3s ease;
+  /* Add a transition effect */
+}
+
+.show-details h6 {
+  font-size: 12px;
+
+}
+
+.show-card {
+  position: absolute;
+  top: 100%;
+  left: 200%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+  /* Add a transition effect */
+  /* Add styles for your show card */
+  width: 300px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: black;
+  border-radius: 6px;
+}
+
+.show-card h6 {
+  margin: 0;
+}
+
+.card-image:hover .play-button,
+.card-image:hover .show-card {
+  opacity: 1;
+  /* Show both play button and show card on hover */
+  display: block;
+}
+
+
+
+.summary {
+  max-height: 95px;
+  /* Set the maximum height for the summary */
+  overflow: hidden;
+}
+
+p {
+  margin-bottom: 0rem;
+}
+
+.summary.show-more {
+  max-height: none;
+  /* Remove the maximum height when the show-more class is applied */
+}
+
+.show-more-btn {
+  color: #b8b2b2;
+  /* Adjust the color based on your design */
+  cursor: pointer;
+  font-size: 12px;
+  margin: 0;
+}
+
+.show-more-btn:hover {
+  color: #5a2e98;
+}
+
+.title {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #5a2e98;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.show-info {
+  /* Include your Anime Info styling here */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.summary {
+
+  margin-top: 10px;
+  font-size: 12px;
+  color: #a6a6a657;
+}
+
+.show-details {
+  margin-top: 3px;
+  margin-bottom: 10px;
+  line-height: 3px;
+  color: #a6a6a657;
+  font-size: 14px;
+}
+
+.show-details strong {
+  color: #847e7eb9
+}
+
+.watch-button {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.watch-button:hover {
+  background-color: #5a2e98;
+  /* Darker shade on hover */
+  color: white;
+}
+
+.genre {
+  color: #5a2e98;
+}
+
+/*Mobile css*/
+@media (max-width: 712px) {
+  .custom-card {
+    width: 140px;
+    height: auto;
+    margin: 0;
+    margin-bottom: 20px;
+    margin: 4px;
+  }
+
+  .card-title {
+    height: auto;
+  }
+
+  .custom-image {
+    width: 140px;
+    height: 160px;
+  }
+
+  .card-image {
+    height: 160px;
+
+  }
+
+  .episode-number {
+    font-size: 10px;
+  }
+
+  .season-number {
+    font-size: 10px;
+  }
+
+  .total-episodes {
+    font-size: 10px;
+  }
+
+}

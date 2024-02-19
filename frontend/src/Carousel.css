@@ -1,0 +1,266 @@
+/* CarouselComponent.css */
+
+.custom-carousel {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel-left {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .carousel-title {
+    margin-top: 20px;
+    height: 120px;
+    width: 440px;
+    overflow: hidden;
+    font-size: 62px;
+    margin-bottom: 10px;
+    color: aliceblue;
+    font-family: 'FontAwesome';
+  }
+  
+  .carousel-date {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: rgb(105, 105, 107);
+  }
+  
+  .carousel-description {
+    overflow: hidden;
+    height: 100px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 440px;
+    color: rgb(105, 105, 107);
+  }
+  
+  .carousel-play-button {
+    position: relative;
+    z-index: 1;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5a2e98;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+  }
+  
+  .carousel-play-button:hover {
+    background-color: #8365ae; /* Darker shade on hover */
+  }
+  
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #007bff;
+  }
+  
+  .carousel-right {
+    flex: 1;
+  }
+  
+  .carousel-image {
+    
+    width: 961px;
+    height: 412px;
+    border-radius: 20px;
+  }
+  
+
+  /* CarouselComponent.css */
+
+.custom-carousel {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel-left {
+    position: absolute;
+    
+    flex: 1;
+    padding: 20px;
+    background-color: transparent;
+  }
+  
+  .carousel-title {
+    max-height: 10rem;
+    width: 440px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    color: aliceblue;
+    line-height: 4rem;
+    font-size: 2.8rem;
+  }
+  
+  .carousel-date {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #777;
+  }
+  
+  .carousel-description {
+    overflow: hidden;
+    max-height: 5.4rem; 
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin-bottom: 10px;
+
+    color: #777;
+  }
+  
+  .carousel-play-button {
+    position: relative;
+    z-index: 1;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5a2e98;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+  }
+  
+  .carousel-play-button:hover {
+    background-color: #8365ae; /* Darker shade on hover */
+  }
+  
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #007bff;
+  }
+  
+  .carousel-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .carousel-image {
+   
+    height: 432px;
+    border-radius: 20px;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+   
+  }
+  
+  
+  @media (max-width: 1422px) {
+    .carousel-image {
+     width: 100%;
+     opacity: 0.2;
+    }
+    
+    .carousel-left {
+      z-index: 1;
+      
+    }
+    .carousel-left {
+      width: 430px;
+      
+  }
+  
+  }
+  @media (max-width: 527px)
+  {
+    .carousel-date{
+      font-size: 37px;
+    }
+    .carousel-description{
+      font-size: 21px;
+      width: 350px;
+      margin: 0;
+      padding: 0;
+    }
+    .carousel-title{
+      font-size: 45px;
+      margin: 0;
+      padding: 0;
+      width: 350px;
+    }
+    p.carousel-date{
+      font-size: 20px;
+    }
+    p.carousel-description{
+      font-size: 13px;
+    }
+    .carousel-left{
+      width: 390px;
+      margin: 0;
+      
+    }
+    .tab{
+      margin-right: -5px;
+    }
+   
+  }
+  @media (max-width: 360px)
+  {
+    .carousel-title{
+      width: 340px;
+    }
+    .carousel-left{
+      width: 340px;
+    }
+    .right-row{
+      display: flex;
+      justify-content: space-around;
+    }
+    .carousel-description{
+
+      width: 310px;
+    }
+  }
+  /* Add this to your existing Carousel.css file */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.carousel-left.zoom-in {
+  animation: zoomIn 1s forwards;
+}

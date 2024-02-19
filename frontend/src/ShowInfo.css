@@ -1,0 +1,214 @@
+#w-info {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #w-info .brating .rating {
+    background: url('/images/ratings-background.png') no-repeat bottom right;
+    background-color: #aaa;
+    background-size: contain;
+    padding: 20px 30px;
+    display: block;
+    min-height: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-right: 100px;
+    color: #222;
+}
+  
+  #w-info .binfo .info .bmeta {
+    display: flex;
+}
+  
+#w-info .binfo .poster {
+    max-width: 200px;
+    width: 20%;
+    flex-shrink: 0;
+    position: relative;
+}
+#w-info .binfo {
+    display: flex;
+    flex: 1;
+}
+#w-info .binfo .poster span {
+    position: relative;
+    width: 100%;
+    padding-bottom: 140%;
+    display: block;
+    border-radius: .6rem;
+    overflow: hidden;
+}
+#w-info .binfo .poster span img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#w-info .binfo .info {
+    margin-left: 15px;
+    flex-grow: 1;
+}
+#w-info .brating {
+    align-self: center;
+    margin-left: 20px;
+}
+#w-info .brating .rating .score {
+    white-space: nowrap;
+}
+#w-info .brating .rating .score .value {
+    color: #5a2e98;
+    font-size: 2.15rem;
+    font-weight: 700;
+}
+#w-info .brating .rating .score .by {
+    font-size: .9rem;
+}
+#w-info .brating .rating .stars {
+    white-space: nowrap;
+    background: #0e0e0e;
+    border-radius: 50rem;
+    padding: 5px 18px;
+    display: flex;
+    justify-content: center;
+}
+
+#w-info .brating .rating .stars span i {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#w-info .brating .rating .stars i:before, #w-info .brating .rating .stars span:before {
+    font-family: "Font Awesome 6 Free";
+    display: block;
+    font-weight: 900;
+    content: "\f005";
+    color: #777;
+}
+#w-info .brating .rating .stars i, #w-info .brating .rating .stars span {
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 0 5px;
+    font-style: normal;
+    cursor: pointer;
+}
+#w-info .binfo .info .title {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+    color: #ddd;
+}
+.shorting .content {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.6rem;
+    max-height: 4.8rem;
+    overflow: hidden;
+    transition: all .3s;
+   ;
+}
+.shorting .content {
+    -webkit-line-clamp: 10;
+    max-height: 16.8rem;
+
+}
+.shorting .toggle {
+    color: #666;
+    cursor: pointer;
+    display: inline-block;
+    transition: all .2s;
+}   
+.shorting .toggle:hover{
+    color: #5a2e98;
+}
+#w-info .binfo .info .meta>div {
+    color: #777;
+}
+#w-info .binfo .info .synopsis {
+    color: #777;
+}
+#w-info .binfo .info .meta.icons {
+    opacity: .7;
+    font-size: 1.1rem;
+}
+#w-info .binfo .info .meta {
+    min-width: 40%;
+    margin-right: 1rem;
+}
+.meta.icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+.meta.icons i.quality {
+    font-weight: 700;
+    background: #aaa;
+    display: inline-flex;
+    align-items: center;
+    height: 1.5em;
+    padding: 0 .3em;
+    font-size: .65em;
+    color: #0e0e0e;
+    border-radius: .2em;
+    display: inline-block;
+}
+.meta.icons i.rating {
+    border: 1.5px solid #aaa;
+    font-weight: 600;
+    height: 1.5em;
+    display: inline-flex;
+    align-items: center;
+    border-radius: .3em;
+    padding: 0 .3em;
+    font-size: .65em;
+}
+
+.meta.icons i.sub {
+    font-size: 1.15em;
+    vertical-align: middle;
+}
+.meta.icons i {
+    font-style: normal;
+    vertical-align: middle;
+    opacity: .7;
+}
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+#w-info .binfo .info .names {
+    color: #777;
+}
+#w-info .binfo .info .meta>div>span a {
+    color: #a885da;
+    text-decoration: none;
+}
+#w-info .binfo .info .meta>div>span {
+    color: #aaa;
+}
+#w-info .brating .rating .stars span i {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.meta.icons i+i{
+    margin-left: 10px;
+}
+
+@media  (max-width:1045px){
+    
+    #w-info .brating .rating {
+    display: none;
+    }
+}
+@media (max-width:606px){
+#w-info .binfo .info .bmeta {
+    display: flex;
+    flex-wrap: wrap;
+}
+}

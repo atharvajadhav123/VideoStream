@@ -1,0 +1,206 @@
+.form-control-search:focus {
+  color:rgb(216, 216, 216);
+
+  border-color: #5a2e98;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #5a2e98;
+  
+}
+input.form-control-search {
+  
+  margin-right: 3px;
+  height: 40px;
+  width: 152px;
+}
+
+.filter-title{
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 25px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.filter-title2{
+  margin-top: 10px;
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.row.filter-cards {
+  margin-top: 30px;
+}
+.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu.show {
+    display: block; /* or display: flex, display: inline-block, etc. based on your design */
+  }
+
+  .filter-row {
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+  .filter-row2{
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-left: 153px;
+  }
+  .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    width: 150px ;
+    margin-right: 6px;
+    background-color: #49505736;
+    color:  #847e7eb9;
+}
+.filters{
+    font-family: 'Franklin Gothic Small', 'Arial Narrow', Arial, sans-serif;
+}
+/* Add this to your CSS file */
+
+/* Add this to your CSS file */
+.icon.rotate-up,
+.icon.rotate-down {
+  transition: transform 0.3s ease;
+}
+
+.icon.rotate-up {
+  transform: rotate(180deg);
+}
+
+.icon.rotate-down {
+  transform: rotate(0deg);
+}
+.icon{
+  margin-left: 0.255em;
+}
+.btn-purple{
+  background-color: #49505736;
+}
+button.btn.btn-purple.d-flex.align-items-center{
+ background-color: #5a2e98;
+ color: white;
+}
+button.btn.btn-purple.d-flex.align-items-center:hover{
+  background-color: #6b42a5;
+
+ }
+ .dropdown-menu{
+  background-color:#0c0c0c ;
+  color: rgb(117, 117, 117);
+ }
+ .dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  transform-origin: top;
+  padding: 0;
+}
+
+
+/* Show dropdown */
+.dropdown-menu.show {
+  display: block;
+  transform:max-height 0.5s ease-in-out;
+  max-height: 400px; /* Adjust the value based on your content's height */
+  overflow-y: auto; /* Add a vertical scroll bar */
+  transform: scaleY(1);
+}
+
+.genre-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto; /* Enable vertical scrollbar if the content exceeds the max height */
+  max-height: 100%; /* Adjust the value based on your preferred maximum height */
+}
+
+.genre-list li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional: Add some styling to checkboxes and labels */
+.genre-list input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.genre-list label {
+  cursor: pointer;
+}
+
+  /* Styling scrollbar */
+.dropdown-menu.show::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dropdown-menu.show::-webkit-scrollbar-thumb {
+  background-color: #5a2e98;
+}
+
+.dropdown-menu.show::-webkit-scrollbar-track {
+  background-color: #0c0c0c;
+}
+
+/* Styling checkbox */
+.dropdown-menu.show input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #5a2e98;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  margin-right: 4px;
+  cursor: pointer;
+  outline: none; /* Add this line to remove the default outline */
+  position: relative;
+}
+
+.dropdown-menu input[type="checkbox"]
+{
+   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #5a2e98;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  margin-right: 4px;
+  cursor: pointer;
+  outline: none; /* Add this line to remove the default outline */
+}
+
+/* Checkmark style */
+.dropdown-menu.show input[type="checkbox"]::before {
+  content: '\2713'; /* Unicode character for checkmark */
+  font-size: 12px; /* Adjust the size of the checkmark */
+  color: #847e7eb9; /* Color of the checkmark */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Hide the checkmark by default */
+}
+
+/* Show checkmark when checkbox is checked */
+.dropdown-menu.show input[type="checkbox"]:checked::before {
+  display: block;
+}
+
+/* Background color for checked checkbox */
+.dropdown-menu.show input[type="checkbox"]:checked {
+  background-color: #5a2e98;
+}
+.genre-list li:hover{
+  color: #5a2e98;
+}
+@media (max-width: 1152px) {
+.filter-row2{
+  margin-left: 0;
+}
+}

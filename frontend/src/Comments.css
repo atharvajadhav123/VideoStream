@@ -1,0 +1,10 @@
+p.text-comment{
+    color: #787474;
+}
+.comment-username{
+    color:#5a2e98;  
+}
+a.d-flex.align-items-center.me-3 {
+    text-decoration: none;
+    color: #5a2e98;
+}

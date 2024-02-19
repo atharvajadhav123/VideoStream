@@ -1,0 +1,90 @@
+.container{
+    background-color: black;
+}
+.card-body {
+    padding: 0;
+    /* Remove padding inside the card body */
+    padding-bottom: 10px;
+}
+
+.custom-card {
+    width: 175px;
+    /* Set a custom width for the card container */
+    margin: 10px;
+    /* Add some margin between cards */
+}
+
+.custom-card .card {
+    background-color: black;
+    /* Set background color for the card */
+    color: white;
+    /* Set text color inside the card */
+}
+
+.custom-image {
+    width: 150px;
+    height: 170px;
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+}
+
+.episode-info {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* Reduce margin below the episode info */
+    padding-left: 3px;
+    background-color: rgb(53, 52, 52);
+}
+
+.episode-number {
+    background-color: #007bff;
+    /* Example background color for the episode number box */
+    color: #fff;
+    /* Example text color for the episode number */
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 10px;
+    margin-left: 5px;
+    display: inline-block;
+    transform: skew(-15deg);
+}
+
+.season-number {
+    background-color: rgb(192, 192, 0);
+    /* Example background color for the episode number box */
+    color: #fff;
+    /* Example text color for the episode number */
+    margin-left: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    display: inline-block;
+    transform: skew(-15deg);
+}
+
+.Tv-letter {
+    color: white;
+    /* Set text color to white */
+    font-weight: bold;
+    /* Make it bold */
+    margin-left: 50px;
+    /* Adjust margin to move it right */
+}
+
+.skewed-icon {
+    font-size: small;
+    color: #007bff;
+    /* Example color for the language icon */
+    margin-left: 3px;
+    display: inline-block;
+    transform: skew(-15deg);
+    /* Skew the icon to look like an italic square */
+}
+
+.card-title {
+    margin-bottom: 0;
+    /* Reduce space below the title */
+    font-size: small;
+    padding-left: 1px;
+}

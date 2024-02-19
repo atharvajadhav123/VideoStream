@@ -1,0 +1,98 @@
+.trend-title {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 5px;
+  line-height: normal;
+  color: hsl(0, 8%, 67%);
+  font-weight: lighter;
+
+  margin-bottom: 5px;
+
+}
+
+.trending-date {
+  margin-right: 5px;
+}
+
+a.trend-link {
+  text-decoration: none;
+}
+
+.trending-episode-number {
+  height: 25px;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  margin-right: 3px;
+}
+
+.trending-box {
+ 
+  display: flex;
+  align-items: center;
+  background-color: rgb(36 35 35 / 65%);
+  color: rgb(131, 130, 130);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+
+}
+
+.trending-box:hover {
+  cursor: pointer;
+  background-color: rgba(57, 56, 56, 0.65);
+  transition: background-color 0.3s ease;
+
+}
+
+.show-image {
+  width: 55px;
+  height: 73px;
+  margin-right: 10px;
+}
+
+.show-details {
+  flex-grow: 1;
+}
+
+
+.trending-episode-info {
+  display: flex;
+  width: 200px;
+  height: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  /* Reduce margin below the episode info */
+  background-color: transparent;
+ 
+}
+
+
+@media (max-width: 1425px) {
+  .left-side {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .rectangle-container {
+    margin-top: 75px;
+  }
+
+  .carousel-date {
+    font-size: 37px;
+  }
+
+  .carousel-description {
+    font-size: 20px;
+  }
+
+  .carousel-title {
+    margin-bottom: 0px;
+  }
+}

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Poppins:wght@400;700&display=swap');
+
+/* RankingBox.css */
+
+.shuffle-episode-number {
+  background-color: #5a2e98;
+  /* Example background color for the episode number box */
+  color: #e8d6d6;
+  /* Example text color for the episode number */
+  padding: 4px;
+  height: 10px;
+  font-size: 13px;
+  width: 35px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+
+.shuffle-season-number {
+  height: 25px;
+  background-color: #4b4b4b;
+  /* Example background color for the episode number box */
+  color: #e8d6d6;
+  /* Example text color for the episode number */
+  margin-left: -5px;
+  padding: 4px;
+  font-size: 13px;
+  display: inline-block;
+  transform: skew(-15deg);
+  padding-right: 10px;
+}
+.shuffle-total-episodes{
+  margin-right: 3px;
+    height: 25px;
+    background-color: #726d00;
+    /* Example background color for the episode number box */
+    color: #e8d6d6;
+    /* Example text color for the episode number */
+    
+    padding: 4px;
+    font-size: 13px;
+    display: inline-block;
+    transform: skew(-15deg);
+
+  
+}
+a.rank-link{
+  text-decoration: none;
+}
+
+.rank-bookmark{
+  color: #b8b2b2;
+  display: flex;
+  height: 14px;
+  width: auto;
+  cursor: pointer;
+}
+.rank-episode-info {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  /* Reduce margin below the episode info */
+  background-color: rgb(36 35 35 / 65%);
+}
+
+.rank-episode-number {
+  background-color: #5a2e98;
+  /* Example background color for the episode number box */
+  color: #e8d6d6;
+  /* Example text color for the episode number */
+  padding: 4px;
+  height: 20px;
+  font-size: 13px;
+  width: 35px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+
+.rank-season-number {
+  height: 20px;
+  background-color: #4b4b4b;
+  /* Example background color for the episode number box */
+  color: #e8d6d6;
+  /* Example text color for the episode number */
+  margin-left: -5px;
+  padding: 4px;
+  font-size: 13px;
+  display: inline-block;
+  transform: skew(-15deg);
+  padding-right: 10px;
+}
+.rank-total-episodes{
+  margin-right: 3px;
+    height: 20px;
+    background-color: #726d00;
+    /* Example background color for the episode number box */
+    color: #e8d6d6;
+    /* Example text color for the episode number */
+    
+    padding: 4px;
+    font-size: 13px;
+    display: inline-block;
+    transform: skew(-15deg);
+
+  
+}
+.left-side{
+  display: flex;
+  align-items: center;
+  margin-right: 3px;
+}
+.ranking-box {
+    display: flex;
+    align-items: center;
+    background-color: rgb(36 35 35 / 65%);
+    color: rgb(131, 130, 130);
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+
+  }
+  .ranking-box:hover{
+    cursor: pointer;
+    background-color: rgba(57, 56, 56, 0.65);
+    transition: background-color 0.3s ease;
+    
+  }
+  .rank-episode-info{
+    width: auto;
+    height: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* Reduce margin below the episode info */
+    background-color: transparent;
+   }
+  .rank-number {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    margin: 3px;
+  }
+  .rank-number img{
+    width: auto;
+  }
+  .show-image {
+    width: 55px;
+    height: 73px;
+    margin-right: 10px;
+  }
+  
+  .show-details {
+    flex: 1;
+  }
+  
+  .show-title {
+    font-size: 15px;
+font-family: 'Poppins', sans-serif;
+       margin-left: 5px; 
+    line-height: normal;
+    color: #b2a4a4;
+    font-weight: lighter;
+    margin-bottom: 5px;
+  }
+ 
+@media (max-width: 1425px) {
+  .left-side{
+    display: none;
+  }
+}
+@media (max-width: 520px)
+{
+  .rectangle-container{
+    margin-top: 75px;
+  }
+  .carousel-date{
+    font-size: 37px;
+  }
+  .carousel-description{
+    font-size: 20px;
+  }
+  .carousel-title{
+    margin-bottom:0px;
+  }
+  
+}
+  
